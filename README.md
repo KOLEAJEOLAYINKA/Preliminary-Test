@@ -28,9 +28,11 @@ source venvname/bin/activate
 - install all required dependency by running 
 ```{r}
 pip install Django
-pip install pillow
+pip install mysqlclient
 pip install python-dotenv
 ```
+Verify the dependencies listed in the requirement.txt file located in the root directory for additional installations.
+
 - merge migration  by running
 ```{r}
 python3 manage.py makemigrate --merge
@@ -42,7 +44,7 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
-**Note** In case you encounter an error after running the application, Create some entry in the DB and don't let your databease be empty if the error persists [Create issue in the repo](https://github.com/KOLEAJEOLAYINKA/Job-Application/issues) 
+**Note** In case you encounter an error after running the application, Create some entry in the DB and don't let your databease be empty if the error persists [Create issue in the repo](https://github.com/KOLEAJEOLAYINKA/Preliminary-Test/issues) 
 
 ### Technologies 🛠
 - [Django](https://www.djangoproject.com/)
